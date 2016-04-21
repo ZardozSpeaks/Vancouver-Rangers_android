@@ -21,11 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RosterActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.epicodus.vancouverrangers.MainActivity" />
-        </activity>
         <activity android:name=".ScheduleActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -44,6 +39,10 @@
         <activity
             android:name=".Roster2Activity"
             android:label="@string/title_activity_roster2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RosterActivity"
+            android:label="@string/title_activity_roster"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
