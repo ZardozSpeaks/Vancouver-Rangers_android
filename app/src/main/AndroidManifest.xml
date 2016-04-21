@@ -21,10 +21,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RosterActivity" />
-        <activity android:name=".ScheduleActivity" />
-        <activity android:name=".ContactActivity" />
-        <activity android:name=".NewsActivity"></activity>
+        <activity android:name=".RosterActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.epicodus.vancouverrangers.MainActivity" />
+        </activity>
+        <activity android:name=".ScheduleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.vancouverrangers.MainActivity" />
+        </activity>
+        <activity android:name=".ContactActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.vancouverrangers.MainActivity" />
+        </activity>
+        <activity android:name=".NewsActivity"><meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.epicodus.vancouverrangers.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
