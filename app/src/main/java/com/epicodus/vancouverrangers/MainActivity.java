@@ -28,9 +28,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    //buttons, buttons, buttons, button, buttons!!!
     public void onClick(View v) {
         if (v == mContactButton) {
             Intent intent = new Intent(MainActivity.this, ContactActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == mNewsButton) {
+            Intent intent = new Intent(MainActivity.this, NewsActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == mRosterButton) {
+            Intent intent = new Intent(MainActivity.this, RosterActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == mScheduleButton) {
+            Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
             startActivity(intent);
         }
     }
