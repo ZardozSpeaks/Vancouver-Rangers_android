@@ -18,9 +18,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/splashLogo"
         android:src="@drawable/teamlogo"
+        android:layout_marginTop="59dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -33,13 +33,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Roster"
-            android:id="@+id/rosterButton" />
+            android:id="@+id/rosterButton"
+            android:background="#BF1B35"
+            android:layout_margin="5dp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Schedule"
-            android:id="@+id/scheduleButton" />
+            android:id="@+id/scheduleButton"
+            android:background="#BF1B35"
+            android:layout_margin="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -47,13 +51,17 @@
             android:text="News"
             android:id="@+id/newsButton"
             android:layout_above="@+id/buttonsLayout"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:background="#BF1B35"
+            android:layout_margin="5dp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contact Us"
-            android:id="@+id/contactButton" />
+            android:id="@+id/contactButton"
+            android:background="#BF1B35"
+            android:layout_margin="5dp" />
     </LinearLayout>
 
 </RelativeLayout>
