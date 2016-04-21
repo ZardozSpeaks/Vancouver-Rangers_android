@@ -5,17 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.epicodus.vancouverrangers.MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/buttonsLayout"></LinearLayout>
-
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -23,4 +12,48 @@
         android:src="@drawable/background"
         android:scaleType="centerCrop"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splashLogo"
+        android:src="@drawable/teamlogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsLayout"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roster"
+            android:id="@+id/rosterButton" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule"
+            android:id="@+id/scheduleButton" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:id="@+id/newsButton"
+            android:layout_above="@+id/buttonsLayout"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/contactButton" />
+    </LinearLayout>
+
 </RelativeLayout>
