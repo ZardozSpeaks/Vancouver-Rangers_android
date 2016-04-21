@@ -22,24 +22,29 @@
             </intent-filter>
         </activity>
         <activity android:name=".RosterActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.epicodus.vancouverrangers.MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.vancouverrangers.MainActivity" />
         </activity>
         <activity android:name=".ScheduleActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.epicodus.vancouverrangers.MainActivity" />
         </activity>
-        <activity android:name=".ContactActivity" >
+        <activity android:name=".ContactActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.epicodus.vancouverrangers.MainActivity" />
         </activity>
-        <activity android:name=".NewsActivity"><meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.epicodus.vancouverrangers.MainActivity" />
+        <activity android:name=".NewsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.vancouverrangers.MainActivity" />
         </activity>
+        <activity
+            android:name=".Roster2Activity"
+            android:label="@string/title_activity_roster2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
