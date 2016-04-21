@@ -10,8 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class RosterActivity extends AppCompatActivity {
-    private TextView mGoaliesTextView;
+    //private TextView mGoaliesTextView;
     private ListView mGoaliesListView;
+
+    //private TextView mDefenseTextView;
+    private ListView mDefenseListView;
 
     private String [] goalies = new String[] {"#1 - Jamie Nanchen", "#20 - Aaron Daniello", "#30 - Liam Bohm-Meyer", "#33 - Brenden Leise"};
     private String [] defensemen = new String[] {"#5 - Bryce Ebert", "#7 - Matteo Toneatto", "#9 - Michael Hennekens",
@@ -37,6 +40,8 @@ public class RosterActivity extends AppCompatActivity {
                 Toast.makeText(RosterActivity.this, goalies, Toast.LENGTH_LONG).show();
             }
         });
+
+
 
         //mGoaliesTextView = (TextView) findViewById(R.id.goaliesTextView);
 

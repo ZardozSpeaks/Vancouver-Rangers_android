@@ -29,11 +29,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="126dp"
+            android:layout_height="125dp"
             android:id="@+id/goalies"
-            android:layout_marginTop="-450dp"
+            android:layout_marginTop="-530dp"
             android:layout_marginBottom="50dp"
             android:layout_gravity="top|center">
 
@@ -42,39 +42,20 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="GOALTENDERS"
-                android:id="@+id/textView4" />
+                android:id="@+id/textView4"
+                android:layout_marginLeft="100dp" />
 
             <ListView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/goaliesListView" />
+                android:layout_height="100dp"
+                android:id="@+id/goaliesListView"
+                android:layout_marginTop="30dp" />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/forwards">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="FORWARDS"
-                android:id="@+id/textView6" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/textView7" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="125dp"
             android:id="@+id/defense">
 
             <TextView
@@ -84,12 +65,33 @@
                 android:text="DEFENSEMEN"
                 android:id="@+id/textView8" />
 
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/defenseListView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/forwards">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/textView9" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="FORWARDS"
+                android:id="@+id/textView6" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forwardsListView"
+                android:headerDividersEnabled="true" />
+
         </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
