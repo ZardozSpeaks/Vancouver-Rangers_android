@@ -30,9 +30,12 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/goalies">
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:id="@+id/goalies"
+            android:layout_marginTop="-450dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="top|center">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,7 +47,7 @@
             <ListView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/listView" />
+                android:id="@+id/goaliesListView" />
         </LinearLayout>
 
         <LinearLayout
