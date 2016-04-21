@@ -11,33 +11,30 @@ import android.widget.Toast;
 
 public class RosterActivity extends AppCompatActivity {
     //private TextView mGoaliesTextView;
-    private ListView mGoaliesListView;
+    private ListView mRosterListView;
 
-    //private TextView mDefenseTextView;
-    private ListView mDefenseListView;
-
-    private String [] goalies = new String[] {"#1 - Jamie Nanchen", "#20 - Aaron Daniello", "#30 - Liam Bohm-Meyer", "#33 - Brenden Leise"};
-    private String [] defensemen = new String[] {"#5 - Bryce Ebert", "#7 - Matteo Toneatto", "#9 - Michael Hennekens",
-            "#15 - Chris Alberts", "#16 - Jacob Rushlow", "#24 - Billy Wildman 'A'", "#96 - Keegan Kessler", "#97 - Travis Bobb"};
-    private String [] forwards = new String[] {"#Martin Cierny", "#10 - Kyle Stevens", "#12 - Brandon Aab", "#13 - Joel Lehtonen",
-            "#14 - Paul Frys", "#17 - Jesse Vuorinen", "#18 - Grayson Szumilas","#21 - Spence Cowand 'C'", "#42 - Ayrton Chapman",
-            "#54 - Josh Davenport", "#88 - Vladislav Polyashov", "#89 - Simon Uppman", "#91 - Tuomas Korhonen", "#95 - Elijah Bordak",
-            "#98 - Dustin Johnson"};
+    private String [] roster = new String[] {"#1 - Jamie Nanchen - Goalie", "#20 - Aaron Daniello - Goalie", "#30 - Liam Bohm-Meyer - Goalie",
+            "#33 - Brenden Leise - Goalie", "#5 - Bryce Ebert - Defense", "#7 - Matteo Toneatto - Defense", "#9 - Michael Hennekens - Defense",
+            "#15 - Chris Alberts - Defense", "#16 - Jacob Rushlow - Defense", "#24 - (A)Billy Wildman - Defense", "#96 - Keegan Kessler - Defense", "#97 - Travis Bobb - Defense",
+            "#8 - Martin Cierny - Forward", "#10 - Kyle Stevens - Forward", "#12 - Brandon Aab - Forward", "#13 - Joel Lehtonen - Forward",
+            "#14 - Paul Frys - Forward", "#17 - Jesse Vuorinen - Forward", "#18 - Grayson Szumilas - Forward","#21 - (C)Spence Cowand - Forward", "#42 - Ayrton Chapman - Forward",
+            "#54 - Josh Davenport - Forward", "#88 - Vladislav Polyashov - Forward", "#89 - Simon Uppman - Forward", "#91 - Tuomas Korhonen - Forward", "#95 - Elijah Bordak - Forward",
+            "#98 - Dustin Johnson - Forward"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roster);
 
-        mGoaliesListView = (ListView) findViewById(R.id.goaliesListView);
-        ArrayAdapter goalieAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, goalies);
-        mGoaliesListView.setAdapter(goalieAdapter);
+        mRosterListView = (ListView) findViewById(R.id.rosterListView);
+        ArrayAdapter goalieAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, roster);
+        mRosterListView.setAdapter(goalieAdapter);
 
-        mGoaliesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mRosterListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String goalies = ((TextView)view).getText().toString();
-                Toast.makeText(RosterActivity.this, goalies, Toast.LENGTH_LONG).show();
+                String roster = ((TextView)view).getText().toString();
+                Toast.makeText(RosterActivity.this, roster, Toast.LENGTH_LONG).show();
             }
         });
 
